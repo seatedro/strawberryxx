@@ -1,0 +1,9 @@
+{
+	"name": "strawberryxx",
+	"version": "1.0.0",
+	"dependencies": [
+		"boost-asio",
+		"libpqxx",
+		"spdlog"
+	]
+}
