@@ -2,6 +2,7 @@
 #define LOGGER_HXX
 
 #include <memory>
+#include <spdlog/logger.h>
 #include <spdlog/spdlog.h>
 
 class Logger {

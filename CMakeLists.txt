@@ -17,7 +17,7 @@ endif()
 
 add_executable(strawberryxx ${SRC_FILES})
 
-find_package(Boost REQUIRED COMPONENTS asio)
+find_package(Boost REQUIRED COMPONENTS beast)
 find_package(PostgreSQL REQUIRED)
 find_package(spdlog REQUIRED)
 

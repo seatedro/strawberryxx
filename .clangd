@@ -1,0 +1,30 @@
+---
+# Enable all common compiler warnings
+CompileFlags:
+  Add: 
+    - "-std=c++23"
+    - "-Wall"
+    - "-Wextra"
+    - "-Wpedantic"
+    # Add vcpkg include path - replace with your actual vcpkg path
+    - "-I/Users/ro/ronin/strawberryxx/vcpkg_installed/arm64-osx/include"
+    - "-I/Users/ro/ronin/strawberryxx/include"
+  Remove: [-W*, -std=*]
+
+# Configure the indexer
+Index:
+  Background: Build
+  StandardLibrary: Yes
+
+# Configure diagnostics
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  
+# Enable detailed hover information
+Hover:
+  ShowAKA: Yes
+
+# Configure code completion
+Completion:
+  AllScopes: Yes
